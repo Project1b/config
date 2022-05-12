@@ -1,0 +1,5 @@
+server:
+  port: 8083
+
+restClient:
+   personEnterprisesUrl: http://localhost:8081/v1/personEnterprises
