@@ -1,0 +1,5 @@
+server:
+  port: 8081
+
+restClient:
+  accountUrl: http://localhost:8086/v1/accounts
