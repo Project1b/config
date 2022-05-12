@@ -2,4 +2,4 @@ server:
   port: 8081
 
 restClient:
-  accountUrl: http://account-service:8086/v1/accounts
+  accountUrl: http://account-service/v1/accounts
