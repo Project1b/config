@@ -52,3 +52,9 @@ spring:
             - Path=/api/credit/**
           filters:
             - StripPrefix=2
+        - id: person-service
+          uri: lb://person-service
+          predicates:
+            - Path=/api/person/**
+          filters:
+            - StripPrefix=2
