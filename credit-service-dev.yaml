@@ -2,5 +2,5 @@ server:
   port: 8091
 
 restClient:
-  productUrl: http://localhost:8092/v1/products
+  productUrl: http://gateway-server-service/api/gateway/v1/products
   transactionUrl: http://localhost:8094/v1/transaction
