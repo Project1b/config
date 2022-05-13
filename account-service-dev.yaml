@@ -1,5 +1,5 @@
 server:
-  port: 8086
+  port: 0
 
 restClient:
-    customersUrl: http://customer-service:8081/v1/customers
+    customersUrl: http://localhost:8081/v1/customers
