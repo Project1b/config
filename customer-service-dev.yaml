@@ -2,7 +2,7 @@ server:
   port: 8081
 
 restClient:
-  accountUrl: http://gateway-server-service/api/account//
+  accountUrl: http://gateway-server-service/api/account/test
 
 management:
   endpoints:
