@@ -58,3 +58,9 @@ spring:
             - Path=/api/account/**
           filters:
             - StripPrefix=2
+        - id: payment-service
+          uri: lb://payment-service
+          predicates:
+            - Path=/api/payment/**
+          filters:
+            - StripPrefix=2
