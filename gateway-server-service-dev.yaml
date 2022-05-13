@@ -34,13 +34,15 @@ spring:
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
-        - id:
+        - id: person-service
           uri: lb://person-service
           predicates:
             - Path=/api/persons/**
           filters:
             - StripPrefix=2
-        -id: product-service
+        - id: product-service
           uri: lb://product-service
           predicates:
-            -Path=/api/gateway/**
+            - Path=/api/gateway/**
+          filters:
+            - StripPrefix=2
