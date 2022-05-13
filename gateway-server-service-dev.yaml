@@ -26,7 +26,7 @@ spring:
         - id: customer-service
           uri: lb://customer-service
           predicates:
-            - Path=/api/customers
+            - Path=/p22/project/**
           filters:
             - name: CircuitBreaker
               args:
