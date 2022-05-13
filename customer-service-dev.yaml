@@ -4,7 +4,6 @@ server:
 restClient:
   accountUrl: http://gateway-server-service/api/account
 
-
 management:
   endpoints:
     web:
