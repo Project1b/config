@@ -26,7 +26,7 @@ spring:
         - id: customer-service
           uri: lb://customer-service
           predicates:
-            - Path=/api/customer/**
+            - Path=/p22/project/**
           filters:
             - name: CircuitBreaker
               args:
@@ -38,18 +38,6 @@ spring:
           uri: lb://person-service
           predicates:
             - Path=/api/person/**
-          filters:
-            - StripPrefix=2
-        - id: product-service
-          uri: lb://product-service
-          predicates:
-            - Path=/api/product/**
-          filters:
-            - StripPrefix=2
-        - id: credit-service
-          uri: lb://credit-service
-          predicates:
-            - Path=/api/credit/**
           filters:
             - StripPrefix=2
         - id: product-service
