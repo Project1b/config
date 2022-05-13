@@ -6,8 +6,7 @@ restClient:
 
 eureka:
   client:
-    service:
-      url:
+    service-url:
         defaultZone: http://localhost:8096/eureka
   instance:
     preferIpAddress: true
