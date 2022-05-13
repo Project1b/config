@@ -12,9 +12,5 @@ eureka:
   instance:
     preferIpAddress: true
     
-management:
-  endpoints:
-    web:
-      exposure:
-        incude: "*"
+
 
