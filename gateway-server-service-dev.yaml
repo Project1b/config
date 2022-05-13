@@ -52,3 +52,15 @@ spring:
             - Path=/api/credit/**
           filters:
             - StripPrefix=2
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - StripPrefix=2
+        - id: credit-service
+          uri: lb://credit-service
+          predicates:
+            - Path=/api/credit/**
+          filters:
+            - StripPrefix=2
