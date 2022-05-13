@@ -64,3 +64,16 @@ spring:
             - Path=/api/payment/**
           filters:
             - StripPrefix=2
+        - id: enterprise-service
+          uri: lb://enterprise-service
+          predicates:
+            - Path=/api/enterprise/**
+          filters:
+            - StripPrefix=2
+        - id: person-enterprise-service
+          uri: lb://person-enterprise-service
+          predicates:
+            - Path=/api/personenterprise/**
+          filters:
+            - StripPrefix=2
+        
