@@ -1,0 +1,7 @@
+server:
+  port: 8095
+
+restClient:
+  accountUrl: http://localhost:8085/accounts
+  creditUrl: http://localhost:8091/v1/credits
+  transactionUrl: http://localhost:8094/v1
