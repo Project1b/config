@@ -43,12 +43,12 @@ spring:
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path=/api/gateway/**
+            - Path=/api/product/**
           filters:
             - StripPrefix=2
-        -id: credit-service
+        - id: credit-service
           uri: lb://credit-service
           predicates:
-            - Path=/api/gateway/**
+            - Path=/api/credit/**
           filters:
             - StripPrefix=2
