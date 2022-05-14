@@ -15,5 +15,5 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 restClient:
-   personEnterprisesUrl: http://gateway-server-service/api/customer
+   customersUrl: http://gateway-server-service/api/customer
 
