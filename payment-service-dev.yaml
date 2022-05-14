@@ -1,5 +1,5 @@
 server:
-  port: 8095
+  port: 8098
 
 restClient:
   accountUrl: http://localhost:8085/accounts
