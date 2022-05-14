@@ -40,10 +40,10 @@ spring:
             - Path=/api/person/**
           filters:
             - name: CircuitBreaker
-                args:
-                  name: customer
-                  statusCodes: 500
-                  fallbackUri: forward:/defaultFallBack
+              args:
+                name: customer
+                statusCodes: 500
+                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         - id: product-service
           uri: lb://product-service
@@ -51,10 +51,10 @@ spring:
             - Path=/api/product/**
           filters:
             - name: CircuitBreaker
-                args:
-                  name: customer
-                  statusCodes: 500
-                  fallbackUri: forward:/defaultFallBack
+              args:
+                name: customer
+                statusCodes: 500
+                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         - id: credit-service
           uri: lb://credit-service
@@ -62,10 +62,10 @@ spring:
             - Path=/api/credit/**
           filters:
             - name: CircuitBreaker
-                args:
-                  name: customer
-                  statusCodes: 500
-                  fallbackUri: forward:/defaultFallBack
+              args:
+                name: customer
+                statusCodes: 500
+                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         - id: account-service
           uri: lb://account-service
@@ -73,10 +73,10 @@ spring:
             - Path=/api/account/**
           filters:
             - name: CircuitBreaker
-                args:
-                  name: customer
-                  statusCodes: 500
-                  fallbackUri: forward:/defaultFallBack
+              args:
+                name: customer
+                statusCodes: 500
+                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         - id: payment-service
           uri: lb://payment-service
@@ -84,10 +84,10 @@ spring:
             - Path=/api/payment/**
           filters:
             - name: CircuitBreaker
-                args:
-                  name: customer
-                  statusCodes: 500
-                  fallbackUri: forward:/defaultFallBack
+              args:
+                name: customer
+                statusCodes: 500
+                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         - id: enterprise-service
           uri: lb://enterprise-service
@@ -95,10 +95,10 @@ spring:
             - Path=/api/enterprise/**
           filters:
             - name: CircuitBreaker
-                args:
-                  name: customer
-                  statusCodes: 500
-                  fallbackUri: forward:/defaultFallBack
+              args:
+                name: customer
+                statusCodes: 500
+                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         - id: person-enterprise-service
           uri: lb://person-enterprise-service
@@ -106,9 +106,9 @@ spring:
             - Path=/api/personenterprise/**
           filters:
             - name: CircuitBreaker
-                args:
-                  name: customer
-                  statusCodes: 500
-                  fallbackUri: forward:/defaultFallBack
+              args:
+                name: customer
+                statusCodes: 500
+                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         
