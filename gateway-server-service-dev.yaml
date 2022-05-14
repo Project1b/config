@@ -16,7 +16,7 @@ resilience4j:
       defecto:
         timeout-duration: 2s
     instances:
-      customer:
+      customer2:
         base-config: defecto
 
 spring:
