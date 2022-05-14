@@ -9,14 +9,14 @@ resilience4j:
    #     slow-call-rate-threshold: 50
    #     slow-call-duration-threshold: 2s
     instances:
-      customer:
+      bank:
         base-config: defecto
   timelimiter:
     configs:
       defecto:
         timeout-duration: 2s
     instances:
-      customer2:
+      bank:
         base-config: defecto
 
 spring:
@@ -30,7 +30,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
@@ -41,7 +41,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
@@ -52,7 +52,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
@@ -63,7 +63,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
@@ -74,7 +74,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
@@ -85,7 +85,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
@@ -96,7 +96,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
@@ -107,7 +107,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: customer
+                name: bank
                 statusCodes: 500
                 fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
