@@ -3,4 +3,4 @@ server:
 
 restClient:
   productUrl: http://gateway-server-service/api/product/v1/products
-  transactionUrl: http://localhost:8087/v1/transaction/credit
+  transactionUrl: http://gateway-server-service/api/transaction/v1/transaction/credit
