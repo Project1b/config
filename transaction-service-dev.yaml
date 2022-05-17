@@ -11,4 +11,5 @@ eureka:
 restClient:
   accountUrl: http://gateway-server-service/api/account
   productUrl: http://gateway-server-service/api/product
+  creditUr: http://gateway-server-service/api/credit
 
