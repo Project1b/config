@@ -2,6 +2,6 @@ server:
   port: 8098
 
 restClient:
-  accountUrl: http://localhost:8085/accounts
-  creditUrl: http://localhost:8091/v1/credits
-  transactionUrl: http://localhost:8094/v1/createTransaction
+  accountUrl: http://gateway-server-service/api/account
+  creditUrl: http://gateway-server-service/api/credit
+  transactionUrl: http://gateway-server-service/api/transaction
