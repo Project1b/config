@@ -50,11 +50,6 @@ spring:
           predicates:
             - Path=/api/product/**
           filters:
-            - name: CircuitBreaker
-              args:
-                name: bank
-                statusCodes: 500
-                fallbackUri: forward:/defaultFallBack
             - StripPrefix=2
         - id: credit-service
           uri: lb://credit-service
