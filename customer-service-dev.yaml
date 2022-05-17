@@ -8,6 +8,7 @@ spring:
     
 restClient:
   accountUrl: http://gateway-server-service/api/account
+  creditUrl: http://gateway-server-service/api/credit
 
 eureka:
   client:
