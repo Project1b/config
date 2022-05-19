@@ -107,3 +107,9 @@ spring:
             - Path=/api/transaction/**
           filters:
             - StripPrefix=2
+        - id: transfer-service
+          uri: lb://transfer-service
+          predicates:
+            - Path=/api/transfer/**
+          filters:
+            - StripPrefix=2
