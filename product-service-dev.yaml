@@ -5,6 +5,7 @@ restClient:
   accountUrl: http://gateway-server-service/api/account 
   creditUrl: http://gateway-server-service/api/credit
   loanUrl: http://gateway-server-service/api/loan
+  transactionUrl: http://gateway-server-service/api/transaction
 
 eureka:
   client:
