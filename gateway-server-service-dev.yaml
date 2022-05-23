@@ -113,3 +113,9 @@ spring:
             - Path=/api/transfer/**
           filters:
             - StripPrefix=2
+        - id: loan-service
+          uri: lb://loan-service
+          predicates:
+            - Path=/api/loan/**
+          filters:
+            - StripPrefix=2
