@@ -119,3 +119,9 @@ spring:
             - Path=/api/loan/**
           filters:
             - StripPrefix=2
+        - id: debit-card-service
+          uri: lb://debit-card-service
+          predicates:
+            - Path=/api/debitcard/**
+          filters:
+            - StripPrefix=2
