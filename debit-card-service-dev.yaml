@@ -12,3 +12,6 @@ eureka:
         defaultZone: http://localhost:8096/eureka
   instance:
     preferIpAddress: true
+    
+restClient:
+   accountUrl: http://gateway-server-service/api/account
