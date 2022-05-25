@@ -14,7 +14,7 @@ restClient:
 eureka:
   client:
     service-url:
-        defaultZone: http://192.168.1.2:8096/eureka
+        defaultZone: https://bootcamp-nttdata-eureka-server.azurewebsites.net
   instance:
     preferIpAddress: true
 
