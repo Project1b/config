@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://leonel:leonel@cluster0.we5wo.mongodb.net/bank
+      uri: mongodb+srv://erick:erickpinglo@cluster0.xdfgh.mongodb.net/bank
       
 eureka:
   client:
@@ -12,7 +12,6 @@ eureka:
         defaultZone: http://localhost:8096/eureka
   instance:
     preferIpAddress: true
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 restClient:
    customerUrl: http://gateway-server-service/api/customer
